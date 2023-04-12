@@ -1,0 +1,806 @@
+@font-face {
+    font-family: "titulo";
+    src: url("../recursos/tipografias/BrightLarch_PERSONAL_USE.ttf");
+}
+
+@font-face {
+    font-family: "subtitulo";
+    src: url("../recursos/tipografias/mobaster.otf");
+}
+
+@font-face {
+    font-family: "parrafos";
+    src: url("../recursos/tipografias/Minya\ Nouvelle\ Rg.otf");
+}
+
+@font-face {
+    font-family: "contacto";
+    src: url("../recursos/tipografias/Subpear.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* header/INICIO */
+
+h1 {
+    color: #ADA0A6;
+    font-size: 35px;
+    width: 853px;
+    margin: 97px;
+    padding: 33px;
+    background-image: linear-gradient(to bottom, #fdfcfb, #e2d1c3);
+    text-align: center;
+    font-weight: bolder;
+    animation-name: titulo-animado;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    border-radius: 15px;
+}
+
+
+  nav ul li {
+    /* margin: 2px; */
+    /* border: solid 4px #7e787b; */
+    /* padding: 2px; */
+    height: 20px;
+    width: 126px;
+    font-size: 25px;
+    text-align: center;
+    font-family: "contacto";
+    list-style: none;
+    display: inline-block;
+    /* border-radius: 7px; */
+
+} 
+
+ .flex-padre {
+    min-height: 20vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #d3c4cc;
+} 
+
+ .flex-padre img {
+    width: 116px;
+    padding: 12px;
+} 
+
+ .flex-links a {
+    text-decoration: none;
+    color: #aaa2a6;
+    font-weight: bold;
+}
+
+.flex-links a:hover {
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: #dad4ec;
+    color: rgb(66, 40, 40);
+    transition: color 0.4s;
+    background-color: 0.2s;
+} 
+
+
+/* main */
+.main-index {
+    min-height: 70vh;
+    display: flex;
+    background-image: linear-gradient(to top, rgb(54, 51, 51), rgb(129, 122, 122));
+    margin: 20px;
+}
+.segunda-section{
+    display: flex;
+  
+}
+
+.padre-titulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to top, rgb(54, 51, 51), rgb(129, 122, 122));
+}
+
+.padre-titulos p {
+    font-family: "subtitulo";
+    color: #ADA0A6;
+    font-size: 70px;
+    margin: 20px;
+    text-align: center;
+    text-decoration: overline 2px #7d938a;
+}
+
+.main-index img {
+    width: 300px;
+    margin: 10px;
+}
+
+.main-index h2 {
+    width: 200px;
+    text-align: center;
+    font-size: 25px;
+    color: #c49daf;
+    margin: 5px auto;
+    background-color: #DED6D6;
+    font-family: "parrafos";
+}
+
+.main-index p {
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+    border: solid 2px #707573;
+    color: #857d7d;
+    background-color: #ddd2d7;
+    margin: 40px auto;
+    margin-top: 10px;
+    font-family: "contacto";
+}
+
+
+
+
+/* footer */
+.footer-flex {
+    min-height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    background-color: #c0b2b9;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes img {
+    background-color: #757373;
+    border-radius: 15px;
+    padding: 1px;
+    margin: 3px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 30px;
+}
+
+.contactanos {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+.contactanos h3 {
+    margin-bottom: 10px;
+    font-family: "contacto";
+}
+
+.contactanos p {
+    font-family: "contacto";
+}
+
+
+.volver {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.volver a {
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px;
+    font-family: "contacto";
+    margin-top: 10px;
+    color: #7e787b;
+}
+
+.volver a:hover {
+    background-color: #dad4ec;
+    color: white;
+    transition: color 0.4s;
+    background-color: 0.2s;
+
+}
+
+
+
+/* nosotros-main */
+
+.main {
+    min-height: 70vh;
+    background-image: linear-gradient(to top, rgb(54, 51, 51), rgb(129, 122, 122));
+}
+
+.subtitulo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.subtitulo h2 {
+    background-image: linear-gradient(to bottom, #fdfcfb, #e2d1c3);
+    color: #7e787b;
+    font-family: "contacto";
+    font-weight: bold;
+    font-size: 50px;
+    width: 900px;
+    text-align: center;
+    margin: 60px;
+}
+
+
+
+.info-primero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.info-primero p {
+    width: 150px;
+    text-align: center;
+    border: solid 10px #ada0a6;
+    font-family: "parrafos";
+    font-size: 30px;
+    background-color: #d2cbcb;
+    margin: 30px;
+}
+
+.info-primero img {
+    width: 400px;
+}
+
+.info-primero img:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.info-segunda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info-segunda p {
+    width: 170px;
+    text-align: center;
+    border: solid 10px #ada0a6;
+    font-family: "parrafos";
+    font-size: 30px;
+    background-color: #d2cbcb;
+    margin: 30px;
+}
+
+.info-segunda img {
+    width: 400px;
+    margin-top: 50px
+}
+
+.info-segunda img:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.video {
+    display: flex;
+    justify-content: flex-start;
+    margin: 50px;
+    flex-wrap: wrap;
+}
+
+.ubicacion {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ubicacion p {
+    width: 150px;
+    text-align: center;
+    border: solid 10px #ada0a6;
+    font-family: "parrafos";
+    font-size: 30px;
+    background-color: #d2cbcb;
+}
+
+.ubicacion iframe {
+    margin-top: 50px;
+    margin-bottom: 60px;
+
+}
+
+
+
+
+
+/* producto/main */
+.principal-main {
+    min-height: 70vh;
+    background-image: linear-gradient(to top, rgb(54, 51, 51), rgb(129, 122, 122));
+}
+
+.rosas-flores {
+    background-image: linear-gradient(to top, #dad4ec, #f3e7e9);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+        "imagen1 imagen2 imagen3"
+    ;
+    margin: 30px auto;
+    width: 800px;
+    height: 400px;
+    grid-gap: 20px;
+    margin-top: 5px;
+}
+
+.imagen {
+    margin: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+.imagen:hover {
+    transform: scale(1.3);
+}
+
+.imagen1 {
+    grid-area: imagen1;
+    background-image: url("../imagenes/Rosas/IMG_20201012_165952.jpg");
+}
+
+.imagen2 {
+    grid-area: imagen2;
+    background-image: url("../imagenes/Rosas/IMG_20201013_181736.jpg");
+}
+
+.imagen3 {
+    grid-area: imagen3;
+    background-image: url("../imagenes/Rosas/IMG_20201013_181800.jpg");
+}
+
+.p-flores {
+    font-size: 34px;
+    margin: 10px;
+    color: #696969;
+    font-family: "parrafos";
+
+}
+
+
+
+.gerberas-flores {
+    background-image: linear-gradient(to top, #dad4ec, #f3e7e9);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+        "imagen4 imagen5 imagen6"
+    ;
+    margin: 30px auto;
+    width: 800px;
+    height: 400px;
+    grid-gap: 20px;
+}
+
+.imagen4 {
+    grid-area: imagen4;
+    background-image: url("../imagenes/gerberas/WhatsApp\ Image\ 2023-03-18\ at\ 15.19.28.jpeg");
+}
+
+.imagen5 {
+    grid-area: imagen5;
+    background-image: url("../imagenes/gerberas/WhatsApp\ Image\ 2023-03-18\ at\ 15.19.28\ \(1\).jpeg");
+}
+
+.imagen6 {
+    grid-area: imagen6;
+    background-image: url("../imagenes/gerberas/WhatsApp\ Image\ 2023-03-18\ at\ 15.19.32.jpeg");
+}
+
+
+
+.alstroemerias-flores {
+    background-image: linear-gradient(to top, #dad4ec, #f3e7e9);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+        "imagen7 imagen8 imagen9"
+    ;
+    margin: 30px auto;
+    width: 800px;
+    height: 400px;
+    grid-gap: 20px;
+}
+
+.imagen7 {
+    grid-area: imagen7;
+    background-image: url("../imagenes/alstroemelias/IMG_20201012_181706.jpg");
+}
+
+.imagen8 {
+    grid-area: imagen8;
+    background-image: url("../imagenes/alstroemelias/WhatsApp\ Image\ 2023-03-18\ at\ 15.19.31.jpeg");
+}
+
+.imagen9 {
+    grid-area: imagen9;
+    background-image: url("../imagenes/alstroemelias/WhatsApp\ Image\ 2023-03-18\ at\ 15.19.29.jpeg");
+}
+
+
+.ramos-flores {
+    background-image: linear-gradient(to top, #dad4ec, #f3e7e9);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+        "imagen10 imagen11 imagen12"
+    ;
+    margin: 30px auto;
+    width: 800px;
+    height: 400px;
+    grid-gap: 20px;
+}
+
+.imagen10 {
+    grid-area: imagen10;
+    background-image: url("../imagenes/Ramos/20170325_124506\ -\ copia\ -\ copia.jpg");
+}
+
+.imagen11 {
+    grid-area: imagen11;
+    background-image: url("../imagenes/Ramos/20180609_123020.jpg");
+}
+
+.imagen12 {
+    grid-area: imagen12;
+    background-image: url("../imagenes/Ramos/IMG_20201016_183123.jpg");
+}
+
+
+.centros-flores {
+    background-image: linear-gradient(to top, #dad4ec, #f3e7e9);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+        "imagen13 imagen14 imagen15"
+    ;
+    margin: 30px auto;
+    width: 800px;
+    height: 400px;
+    grid-gap: 20px;
+}
+
+.imagen13 {
+    grid-area: imagen13;
+    background-image: url("../imagenes/centros/20160923_200821.jpg");
+}
+
+.imagen14 {
+    grid-area: imagen14;
+    background-image: url("../imagenes/centros/20161119_130933\ -\ copia.jpg");
+}
+
+.imagen15 {
+    grid-area: imagen15;
+    background-image: url("../imagenes/centros/WhatsApp\ Image\ 2023-03-18\ at\ 15.19.33.jpeg");
+}
+
+
+
+
+/* cuidado/main */
+
+.main-cuidado {
+    min-height: 70vh;
+    background-image: linear-gradient(to top, rgb(54, 51, 51), rgb(129, 122, 122));
+}
+
+main ol {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main ol li {
+    list-style-type: upper-roman;
+    font-size: 30px;
+    width: 220px;
+    text-align: center;
+    border: dashed #c0b0b0;
+    color: #bd8383;
+    font-family: "parrafos";
+    margin-top: 80px;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.video p {
+    color: #7d938a;
+    font-size: 40px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: underline 4px #a7a1a1;
+    margin: 50px;
+}
+
+
+
+/* contacto/main */
+
+.main-contacto {
+    min-height: 70vh;
+    background-image: linear-gradient(to top, rgb(54, 51, 51), rgb(129, 122, 122));
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.intro h2 {
+    font-family: "contacto";
+    font-size: 50px;
+    color: #ada0a6;
+    text-decoration: underline 3px #DED6D6;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-family: "contacto";
+    font-size: 20px;
+    width: 200px;
+    text-align: center;
+    color: #7d938a;
+    margin-bottom: 20px;
+}
+
+.intro hr {
+    width: 800px;
+}
+
+
+.formulario {
+    display: flex;
+    justify-content: center;
+}
+
+
+.form-ingresa-nombre,
+.form-ingresa-apellido,
+.form-ingresa-edad {
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.form-apellido,
+.form-nombre,
+.form-edad,
+.form-mensaje {
+    font-family: "contacto";
+    font-size: 20px;
+    margin: 10px;
+
+}
+
+.form-ingresa-mensaje {
+    width: 220px;
+    height: 70px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-enviar {
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    margin-left: 60px;
+}
+
+.form-ingresa-nombre:focus {
+    background-color: #ada0a6;
+    transform: scale(1.1);
+}
+
+.form-ingresa-apellido:focus {
+    background-color: #ada0a6;
+    transform: scale(1.1);
+}
+
+.form-ingresa-edad:focus {
+    background-color: #ada0a6;
+    transform: scale(1.1);
+}
+
+.form-ingresa-mensaje:focus {
+    background-color: #ada0a6;
+    transform: scale(1.1);
+}
+
+.form-enviar:hover {
+    background-color: #ada0a6;
+    color: white;
+    transform: scale(1.1);
+}
+
+.logo {
+    animation-name: animando-logo;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+@keyframes animando-logo {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(45deg);
+
+    }
+
+    50% {
+        transform: rotate(90deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg);
+
+    }
+}
+
+
+@media (max-width: 767px) {
+    /* inicio */
+
+    .segunda-section {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    nav ul li {
+        width: 82px;
+        font-size: 20px;
+        height: 38px;
+    }
+
+    h1 {
+        width: 480px;
+    }
+    /* nosotros */
+
+    .subtitulo h2{
+        width: 627px;
+        font-size: 37px;
+    }
+
+    .info-primero img{
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .info-primero p{
+        width: 153px;
+        font-size: 20px;
+    }
+    .info-segunda img{
+        display: flex;
+        width: 300px;
+    }
+    .info-segunda p{
+        width: 153px;
+        font-size: 20px;
+    }
+
+    /* producto */
+    .rosas-flores {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 300px;
+        height: 700px;
+        grid-template-areas:
+            "imagen1"
+            "imagen2"
+            "imagen3"
+        ;
+    }
+
+    .gerberas-flores{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 300px;
+        height: 800px;
+        grid-template-areas:
+            "imagen4"
+            "imagen5"
+            "imagen6"
+        ;
+    }
+
+    .alstroemerias-flores{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 300px;
+        height: 1100px;
+        grid-template-areas:
+            "imagen7"
+            "imagen8"
+            "imagen9"
+        ;
+    }
+
+    .ramos-flores{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 300px;
+        height: 1500px;
+        grid-template-areas:
+            "imagen10"
+            "imagen11"
+            "imagen12"
+        ;
+    }
+
+    .centros-flores{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 300px;
+        height: 1264px;
+        grid-template-areas:
+            "imagen13"
+            "imagen14"
+            "imagen15"
+        ;
+    }
+
+    .p-flores{
+        font-size: 23px;
+    }
+
+    /* cuidado */
+    main ol{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* contacto */
+    .intro hr{
+        width: 600px;
+    }
+}
