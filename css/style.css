@@ -686,7 +686,7 @@ main ol li {
 }
 
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
     /* inicio */
 
     .segunda-section {
@@ -696,13 +696,18 @@ main ol li {
     }
 
     nav ul li {
-        width: 63px;
-        font-size: 17px;
+        width: 85px;
+        font-size: 20px;
         height: 38px;
     }
 
+    .flex-padre {
+        justify-content: space-evenly;
+        align-items: flex-end;
+    }
+
     .flex-padre img {
-        width: 85px;
+        width: 100px;
         margin-top: 20px;
     }
 
@@ -741,10 +746,11 @@ main ol li {
     .info-segunda p {
         width: 153px;
         font-size: 20px;
+        margin-top: 50px;
     }
 
     .video iframe {
-        width: 300px;
+        width: 500px;
     }
 
     .ubicacion iframe {
@@ -839,21 +845,20 @@ main ol li {
     .form-ingresa-apellido,
     .form-ingresa-edad,
     .form-ingresa-mensaje {
-        margin-left: 80px;
+        margin-left: 180px;
     }
 
     .form-apellido,
     .form-nombre,
     .form-edad,
     .form-mensaje {
-        margin-left: 80px;
+        margin-left: 180px;
     }
 
     .form-enviar {
-        margin-left: 150px;
+        margin-left: 250px;
         margin-bottom: 15px;
     }
-
 
 
 }
