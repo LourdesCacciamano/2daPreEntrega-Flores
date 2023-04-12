@@ -686,7 +686,7 @@ main ol li {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 375px) {
     /* inicio */
 
     .segunda-section {
