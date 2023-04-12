@@ -42,7 +42,7 @@ h1 {
 }
 
 
-  nav ul li {
+nav ul li {
     /* margin: 2px; */
     /* border: solid 4px #7e787b; */
     /* padding: 2px; */
@@ -55,9 +55,9 @@ h1 {
     display: inline-block;
     /* border-radius: 7px; */
 
-} 
+}
 
- .flex-padre {
+.flex-padre {
     min-height: 20vh;
     display: flex;
     flex-direction: row;
@@ -65,14 +65,14 @@ h1 {
     justify-content: space-evenly;
     align-items: center;
     background-color: #d3c4cc;
-} 
+}
 
- .flex-padre img {
+.flex-padre img {
     width: 116px;
     padding: 12px;
-} 
+}
 
- .flex-links a {
+.flex-links a {
     text-decoration: none;
     color: #aaa2a6;
     font-weight: bold;
@@ -85,7 +85,7 @@ h1 {
     color: rgb(66, 40, 40);
     transition: color 0.4s;
     background-color: 0.2s;
-} 
+}
 
 
 /* main */
@@ -95,9 +95,9 @@ h1 {
     background-image: linear-gradient(to top, rgb(54, 51, 51), rgb(129, 122, 122));
     margin: 20px;
 }
-.segunda-section{
+
+.segunda-section {
     display: flex;
-  
 }
 
 .padre-titulos {
@@ -696,37 +696,61 @@ main ol li {
     }
 
     nav ul li {
-        width: 82px;
-        font-size: 20px;
+        width: 63px;
+        font-size: 17px;
         height: 38px;
     }
 
-    h1 {
-        width: 480px;
+    .flex-padre img {
+        width: 85px;
+        margin-top: 20px;
     }
+
+    h1 {
+        width: 280px;
+        height: 140px;
+        margin: 50px auto;
+    }
+
+    .padre-titulos p {
+        font-size: 57px;
+    }
+
     /* nosotros */
 
-    .subtitulo h2{
+    .subtitulo h2 {
         width: 627px;
         font-size: 37px;
     }
 
-    .info-primero img{
+    .info-primero img {
         width: 300px;
         margin-bottom: 20px;
     }
-    .info-primero p{
+
+    .info-primero p {
         width: 153px;
         font-size: 20px;
     }
-    .info-segunda img{
+
+    .info-segunda img {
         display: flex;
         width: 300px;
     }
-    .info-segunda p{
+
+    .info-segunda p {
         width: 153px;
         font-size: 20px;
     }
+
+    .video iframe {
+        width: 300px;
+    }
+
+    .ubicacion iframe {
+        width: 300px;
+    }
+
 
     /* producto */
     .rosas-flores {
@@ -741,7 +765,7 @@ main ol li {
         ;
     }
 
-    .gerberas-flores{
+    .gerberas-flores {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(3, 1fr);
         width: 300px;
@@ -753,7 +777,7 @@ main ol li {
         ;
     }
 
-    .alstroemerias-flores{
+    .alstroemerias-flores {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(3, 1fr);
         width: 300px;
@@ -765,7 +789,7 @@ main ol li {
         ;
     }
 
-    .ramos-flores{
+    .ramos-flores {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(3, 1fr);
         width: 300px;
@@ -777,7 +801,7 @@ main ol li {
         ;
     }
 
-    .centros-flores{
+    .centros-flores {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(3, 1fr);
         width: 300px;
@@ -789,18 +813,47 @@ main ol li {
         ;
     }
 
-    .p-flores{
+    .p-flores {
         font-size: 23px;
     }
 
     /* cuidado */
-    main ol{
+    main ol {
         display: flex;
         flex-direction: column;
     }
 
-    /* contacto */
-    .intro hr{
-        width: 600px;
+    .video p {
+        font-size: 25px;
+        text-decoration: none;
+        border: solid 5px #997d7d;
     }
+
+
+    /* contacto */
+    .intro hr {
+        width: 300px;
+    }
+
+    .form-ingresa-nombre,
+    .form-ingresa-apellido,
+    .form-ingresa-edad,
+    .form-ingresa-mensaje {
+        margin-left: 80px;
+    }
+
+    .form-apellido,
+    .form-nombre,
+    .form-edad,
+    .form-mensaje {
+        margin-left: 80px;
+    }
+
+    .form-enviar {
+        margin-left: 150px;
+        margin-bottom: 15px;
+    }
+
+
+
 }
