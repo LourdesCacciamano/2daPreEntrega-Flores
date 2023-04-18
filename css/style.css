@@ -27,12 +27,13 @@
 /* header/INICIO */
 
 h1 {
-    color: #ADA0A6;
-    font-size: 35px;
+    font-family: "parrafos";
+    color: #000000;
+    font-size: 40px;
     width: 853px;
     margin: 97px;
     padding: 33px;
-    background-image: linear-gradient(to bottom, #fdfcfb, #e2d1c3);
+    background-image: linear-gradient(to bottom, #d9d2cb, #211e1c);
     text-align: center;
     font-weight: bolder;
     animation-name: titulo-animado;
@@ -43,9 +44,6 @@ h1 {
 
 
 nav ul li {
-    /* margin: 2px; */
-    /* border: solid 4px #7e787b; */
-    /* padding: 2px; */
     height: 20px;
     width: 126px;
     font-size: 25px;
@@ -53,7 +51,6 @@ nav ul li {
     font-family: "contacto";
     list-style: none;
     display: inline-block;
-    /* border-radius: 7px; */
 
 }
 
@@ -64,18 +61,20 @@ nav ul li {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #d3c4cc;
+    background-image: url("../imagenes/background-header.jpg");
 }
 
 .flex-padre img {
-    width: 116px;
+    width: 90px;
     padding: 12px;
 }
 
 .flex-links a {
+    background-color: #eec0f7;
     text-decoration: none;
-    color: #aaa2a6;
+    color: #5c5654;
     font-weight: bold;
+    border-radius: 8px;
 }
 
 .flex-links a:hover {
@@ -90,15 +89,11 @@ nav ul li {
 
 /* main */
 .main-index {
-    min-height: 70vh;
+    min-height: 65vh;
     display: flex;
     background-image: linear-gradient(to top, rgb(54, 51, 51), rgb(129, 122, 122));
-    margin: 20px;
 }
 
-.segunda-section {
-    display: flex;
-}
 
 .padre-titulos {
     display: flex;
@@ -155,7 +150,8 @@ nav ul li {
     justify-content: center;
     align-items: flex-end;
     flex-wrap: wrap;
-    background-color: #c0b2b9;
+    background-image: url("../imagenes/background-footer.jpg");
+
 }
 
 .redes {
@@ -165,13 +161,13 @@ nav ul li {
 }
 
 .redes img {
-    background-color: #757373;
-    border-radius: 15px;
+    background-color: #000000;
+    border-radius: 10px;
     padding: 1px;
     margin: 3px;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-bottom: 10px;
-    width: 30px;
+    width: 40px;
 }
 
 .contactanos {
@@ -180,16 +176,22 @@ nav ul li {
     align-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-
+    background-color: #987979;
+    border-radius: 5px;
 }
 
 .contactanos h3 {
     margin-bottom: 10px;
     font-family: "contacto";
+    font-weight: bold;
+    color: #211e1c;
 }
 
 .contactanos p {
     font-family: "contacto";
+    font-weight: bold;
+    color: #211e1c;
+    font-size: 20px;
 }
 
 
@@ -201,18 +203,21 @@ nav ul li {
 .volver a {
     font-size: 20px;
     text-decoration: none;
-    margin: 10px;
+    margin: 20px;
     font-family: "contacto";
     margin-top: 10px;
-    color: #7e787b;
+    color: #63575d;
+    background-color: #987979;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
 .volver a:hover {
     background-color: #dad4ec;
-    color: white;
+    color: rgb(48, 44, 44);
     transition: color 0.4s;
     background-color: 0.2s;
-
+    border-radius: 10px;
 }
 
 
@@ -231,14 +236,15 @@ nav ul li {
 }
 
 .subtitulo h2 {
-    background-image: linear-gradient(to bottom, #fdfcfb, #e2d1c3);
-    color: #7e787b;
+    background-image: linear-gradient(to bottom, #d9d2cb, #211e1c);
+    color: #eca3c8;
     font-family: "contacto";
     font-weight: bold;
     font-size: 50px;
     width: 900px;
     text-align: center;
     margin: 60px;
+    padding: 30px;
 }
 
 
@@ -345,7 +351,7 @@ nav ul li {
     grid-template-areas:
         "imagen1 imagen2 imagen3"
     ;
-    margin: 30px auto;
+    margin:auto;
     width: 800px;
     height: 400px;
     grid-gap: 20px;
@@ -488,7 +494,7 @@ nav ul li {
     grid-template-areas:
         "imagen13 imagen14 imagen15"
     ;
-    margin: 30px auto;
+    margin: auto;
     width: 800px;
     height: 400px;
     grid-gap: 20px;
@@ -517,6 +523,8 @@ nav ul li {
 .main-cuidado {
     min-height: 70vh;
     background-image: linear-gradient(to top, rgb(54, 51, 51), rgb(129, 122, 122));
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 main ol {
@@ -689,8 +697,9 @@ main ol li {
 @media (max-width: 576px) {
     /* inicio */
 
-    .segunda-section {
+    .main-index {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         margin: auto;
     }
@@ -712,7 +721,7 @@ main ol li {
     }
 
     h1 {
-        width: 280px;
+        width: 365px;
         height: 140px;
         margin: 50px auto;
     }
@@ -725,7 +734,7 @@ main ol li {
 
     .subtitulo h2 {
         width: 627px;
-        font-size: 37px;
+        font-size: 29px;
     }
 
     .info-primero img {
@@ -833,31 +842,13 @@ main ol li {
         font-size: 25px;
         text-decoration: none;
         border: solid 5px #997d7d;
+        margin: 20px;
     }
 
 
     /* contacto */
     .intro hr {
-        width: 300px;
-    }
-
-    .form-ingresa-nombre,
-    .form-ingresa-apellido,
-    .form-ingresa-edad,
-    .form-ingresa-mensaje {
-        margin-left: 180px;
-    }
-
-    .form-apellido,
-    .form-nombre,
-    .form-edad,
-    .form-mensaje {
-        margin-left: 180px;
-    }
-
-    .form-enviar {
-        margin-left: 250px;
-        margin-bottom: 15px;
+        width: 444px;
     }
 
 
